@@ -16,9 +16,10 @@ class _DiceRollerState extends State<DiceRoller> {
   final randomizer = Random(); //prevengo la creazione di nuovi oggetti che occuperebbero memoria
   var currentDiceRoll = 2;
 
+//Setto lo state
   void rollDice() {
     setState((){
-      currentDiceRoll = randomizer.nextInt(6) + 1; //lol
+      currentDiceRoll = randomizer.nextInt(6) + 1; 
     });
   }
 
